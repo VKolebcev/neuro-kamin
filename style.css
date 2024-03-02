@@ -40,6 +40,18 @@ html {
     padding: 30px;
 }
 
+.meeting > .buttons {
+    position: absolute;
+    right: 20px;
+    bottom: 20px;
+    width: 500px;
+}
+
+.meeting > .buttons > a {
+    float: right;
+    margin: 0px 10px;
+}
+
 .meeting>h4 {
     font-family: 'Floripa';
     text-transform: uppercase;
@@ -65,18 +77,22 @@ html {
     }
 }
 
-.meeting > a {
-    position: absolute;
-    bottom: 20px;
-    right: 20px;
+.meeting > .buttons > a {
     border-radius: 1rem 1rem 2rem 1rem;
     backdrop-filter: blur(10px);
-    background-color: #0d6dfda8;
     padding: 10px 30px;
-    float: right;
 }
 
-.meeting > a:hover {
+.meeting > .buttons > .btn-primary {
+    background-color: #0d6dfda8;
+}
+
+.meeting > .buttons > .btn-success {
+    border-radius: 1rem;
+    background-color: #198754a8;
+}
+
+.meeting > .buttons > a:hover {
     box-shadow: 0px 10px 30px -5px rgba(0,0,0,0.8) !important;
 }
 
@@ -184,4 +200,27 @@ html {
 
 .visible {
     opacity: 1;
+}
+
+iframe {
+    border-radius: 1rem;
+    width: calc(var(--bs-modal-width) - 40px);
+    height: calc((var(--bs-modal-width) - 40px) * 0.5625);
+}
+
+.modal-body > div {
+    padding: 20px;
+}
+
+.modal-footer > button:last-child {
+    border-bottom-right-radius: 1.5rem;
+}
+
+.noselect {
+	-webkit-touch-callout: none;
+	-webkit-user-select: none;
+	-khtml-user-select: none;
+	-moz-user-select: none;
+	-ms-user-select: none;
+	user-select: none;
 }

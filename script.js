@@ -12,6 +12,8 @@ $(".contact").on('click', function (event) {
 
 $(".btn-secondary").on('click', function () {
     $("#email-modal").modal("hide");
+    $("#prev-meet-modal").modal("hide");
+    $("#how-reg-modal").modal("hide");
 })
 
 $(".submit").on("click", function () {
@@ -39,3 +41,12 @@ $(".submit").on("click", function () {
             }
         });
 });
+
+
+function prevmeet() {
+    $("#prev-meet-modal").modal("show");
+}
+
+function showvideo() {
+    $("#how-reg-modal").modal("show");
+}

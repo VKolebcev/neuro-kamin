@@ -17,12 +17,12 @@
     <div class="container-block">
         <input type="radio" name="slide" id="c1" checked>
         <label for="c1" class="card">
-            <div class="row-title">
+            <div class="row-title noselect">
                 <div class="icon">1</div>
                 <h4>Yandex GPT 2.0</h4>
             </div>
 
-            <div class="description">
+            <div class="description noselect">
                 <p>Нейросеть для обработки текста, способная помочь в создании писем, а также в поиске и объяснении
                     различных тем.</p>
             </div>
@@ -33,12 +33,12 @@
         </label>
         <input type="radio" name="slide" id="c2">
         <label for="c2" class="card">
-            <div class="row-title">
+            <div class="row-title noselect">
                 <div class="icon">2</div>
                 <h4>Kandinsky 3.0</h4>
             </div>
 
-            <div class="description">
+            <div class="description noselect">
                 <p>Нейронная сеть для создания изображений. Для работы потребуется регистрация (можете
                     использовать рабочую почту)</p>
             </div>
@@ -49,12 +49,12 @@
         </label>
         <input type="radio" name="slide" id="c3">
         <label for="c3" class="card">
-            <div class="row-title">
+            <div class="row-title noselect">
                 <div class="icon">3</div>
                 <h4>ChatGPT 3.5</h4>
             </div>
 
-            <div class="description">
+            <div class="description noselect">
                 <p>На данный момент одна из самых мощных бесплатных нейронных сетей. Для использования необходим
                     VPN.</p>
             </div>
@@ -62,18 +62,18 @@
             <div class="buttons">
                 <a href="https://chat.openai.com/" class="btn btn-primary" target="_blank"
                     rel="noopener noreferrer">Перейти</a>
-                <a href="https://youtu.be/kQDWn2CBFns" class="btn btn-danger video" target="_blank"
+                <a onclick="showvideo()" class="btn btn-danger video" target="_blank"
                     rel="noopener noreferrer">Видео. Как зарегистрироваться?</a>
             </div>
         </label>
         <input type="radio" name="slide" id="c4">
         <label for="c4" class="card">
-            <div class="row-title">
+            <div class="row-title noselect">
                 <div class="icon">4</div>
                 <h4>Яндекс браузер</h4>
             </div>
 
-            <div class="description">
+            <div class="description noselect">
                 <p>Обновленный яндекс браузер поддерживает генерацию текста, изображений. Пересказывает страницы
                     и видео, а также помогает в работе с текстом при написании.</p>
             </div>
@@ -82,20 +82,46 @@
                 <a href="https://browser.yandex.ru/c/index" class="btn btn-primary" target="_blank"
                     rel="noopener noreferrer">Скачать</a>
             </div>
+
+
+        </label>
+
+        <input type="radio" name="slide" id="c5">
+        <label for="c5" class="card">
+            <div class="row-title noselect">
+                <div class="icon">5</div>
+                <h4>Bing. Copilot</h4>
+            </div>
+
+            <div class="description noselect">
+                <p>Текстовая нейронная сеть на основе GPT4, включает в себя возможность генерации изображений прямо в
+                    рамках чата. Также предлагает ссылки на используемые источники при формировании ответа. Доступен
+                    только с VPN</p>
+
+
+            </div>
+
+            <div class="buttons">
+                <a href="https://chat.bing.com/" class="btn btn-primary" target="_blank"
+                    rel="noopener noreferrer">Перейти</a>
+                <a onclick="showvideo()" class="btn btn-danger video" target="_blank"
+                    rel="noopener noreferrer">Видео. Как зарегистрироваться?</a>
+            </div>
         </label>
     </div>
 
-    <div class="meeting gradient-background">
+    <div class="meeting gradient-background noselect">
 
         <h4>Онлайн-встреча</h4>
-        <p class="date"><strong>Ближайшая встреча:</strong> 28.02.24 (среда) 15:00</p>
-        <p><strong>Тема встречи:</strong> ознакомительная лекция. Подробнее обсудим сервисы, которые уже
-            сейчас доступны на рабочих столах. Ответим на первые возникшие вопросы.</p>
-        <a href="https://telemost.yandex.ru/j/48321807011923" class="btn btn-primary" target="_blank"
-            rel="noopener noreferrer">Перейти</a>
+        <p class="date"><strong>Ближайшая встреча:</strong> дата уточняется</p>
+        <p><strong>Тема встречи:</strong> уточняется</p>
+        <div class="buttons">
+            <a href="#" class="btn btn-primary disabled" target="_blank" rel="noopener noreferrer">Перейти</a>
+            <a onclick="prevmeet()" class="btn btn-success video" target="_blank" rel="noopener noreferrer">Записи встреч</a>
+        </div>
     </div>
 
-    <div class="col-blo">
+    <div class="col-blo noselect">
         <a href="https://t.me/neuro_kamin" target="_blank" rel="noopener noreferrer" class="achannel">
             <div class="channel block">
                 <img src="img/tg.png" alt="Телеграм">
@@ -107,7 +133,7 @@
         </a>
     </div>
 
-    <div class="col-blo">
+    <div class="col-blo noselect">
         <div class="payneuro block">
             <div>
                 <h3>Запросить доступ к платной нейронной сети</h3>
@@ -116,37 +142,37 @@
         </div>
     </div>
 
-    <div class="col-blo">
+    <div class="col-blo noselect">
         <div class="question contact block">
             <div>
                 <h3>Возник вопрос?</h3>
-                <span>Напишите его на почту ai-info@kaminsoft.ru. Постараемся ответить на него как можно
+                <span>Напишите его на почту neuro@kaminsoft.ru. Постараемся ответить на него как можно
                     скорее</span>
             </div>
         </div>
     </div>
 
-    <div class="col-bro">
+    <div class="col-bro noselect">
         <div class="idea contact block">
             <div>
                 <h3>Есть идея?</h3>
-                <span>Напишите ее на почту ai-info@kaminsoft.ru. Мы рассмотрим варианты реализации</span>
+                <span>Напишите ее на почту neuro@kaminsoft.ru. Мы рассмотрим варианты реализации</span>
             </div>
         </div>
     </div>
 
-    <div class="col-bro">
+    <div class="col-bro noselect">
         <div class="exp contact block">
             <div>
                 <h3>Уже используете нейронки?</h3>
-                <span>Расскажите о своем опыте на ai-info@kaminsoft.ru. Возможно это будет полезно и другим</span>
+                <span>Расскажите о своем опыте на neuro@kaminsoft.ru. Возможно это будет полезно и другим</span>
             </div>
         </div>
     </div>
 
-    <h1 class="title">КАМИН</h1>
+    <h1 class="title noselect">КАМИН</h1>
 
-    <div class="info">Тест</div>
+    <div class="info noselect">Тест</div>
 
 
     <div class="modal fade" id="email-modal" tabindex="-1" role="dialog" aria-labelledby="email-modal-title"
@@ -158,18 +184,20 @@
                         <input type="hidden" name="what" id="what">
 
                         <div class="form-floating">
-                            <input type="email" class="form-control" id="email-adress" placeholder="Введите вашу почту" name="email">
+                            <input type="email" class="form-control" id="email-adress" placeholder="Введите вашу почту"
+                                name="email">
                             <label for="email-adress">Ваша почта</label>
                         </div>
 
                         <div class="form-floating">
-                            <input type="text" class="form-control" id="name" placeholder="Введите ваше имя" name="name">
+                            <input type="text" class="form-control" id="name" placeholder="Введите ваше имя"
+                                name="name">
                             <label for="name">Ваше имя</label>
                         </div>
 
                         <div class="form-floating">
-                            <textarea class="form-control" placeholder="Ваш комментарий" id="text"
-                                style="height: 100px" name="text"></textarea>
+                            <textarea class="form-control" placeholder="Ваш комментарий" id="text" style="height: 100px"
+                                name="text"></textarea>
                             <label for="text">Ваш комментарий</label>
                         </div>
                     </div>
@@ -178,6 +206,135 @@
                         <button type="button" class="btn btn-primary submit">Отправить</button>
                     </div>
                 </form>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal fade" id="prev-meet-modal" tabindex="-1" role="dialog" aria-labelledby="modal-title"
+        aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered modal-lg" role="document">
+            <div class="modal-content">
+                <div class="modal-body">
+                    <iframe src="https://www.youtube.com/embed/jlADLq69P8Q?si=oTgyeZI9otFy04Dw"
+                        title="YouTube video player" frameborder="0"
+                        allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                        allowfullscreen></iframe>
+
+                    <div>
+                        <h6>00:00:12 Введение в нейронные сети</h6>
+                        <ul>
+                            <li>Владислав Колебцев, методист учебного центра и участник проектной группы "КАМИН и
+                                искусственный интеллект", рассказывает о доступных нейронных сетях и их
+                                использовании.</li>
+                            <li>
+                                Сайт для обмена информацией: <a
+                                    href="http://uc.kaminsoft.ru/neuro/">http://uc.kaminsoft.ru/neuro/</a>.
+                            </li>
+                        </ul>
+                        <h6>00:07:47 Структура промтов и их использование</h6>
+                        <ul>
+                            <li>Промт - это запрос для нейронной сети, который должен быть максимально информативным и
+                                без двусмысленности.</li>
+                            <li>Промты состоит из 4 частей: общая инструкция, вопрос, дополнительная информация и
+                                формат ответа.</li>
+                            <li>Рассматривается пример промта по структуре</li>
+                        </ul>
+                        <h6>00:10:32 Примеры промтов и их использование</h6>
+                        <ul>
+                            <li>Примеры промтов</li>
+                            <li>Важно конкретизировать вопросы и уточнять формат ответа для получения лучшего
+                                результата.</li>
+                        </ul>
+
+                        <h6>00:12:49 Использование нейронных сетей для общения</h6>
+
+                        <ul>
+                            <li>В видео объясняется, как использовать нейронные сети для общения, в частности, для
+                                написания писем и статей.</li>
+                            <li>Нейронные сети могут генерировать ответы, но их ответы могут содержать ошибки или быть
+                                нелогичными.</li>
+                        </ul>
+
+                        <h6>00:20:21 Контекст и токины</h6>
+                        <ul>
+                            <li>Контекст определяет, сколько информации нейронная сеть может запомнить.</li>
+                            <li>Токены - это кусочки текста, которые могут включать слова, знаки препинания, отдельные
+                                буквы или несколько слов подряд.</li>
+                            <li>Для разных языков количество токенов может быть разным.</li>
+                        </ul>
+
+                        <h6>00:23:53 Волшебные слова для улучшения взаимодействия с нейронной сетью</h6>
+
+                        <ul>
+                            <li>Волшебные слова, такие как "будь краток", "размышляй шаг за шагом", могут помочь
+                                улучшить
+                                взаимодействие с нейронной сетью и уменьшить вероятность ошибок.</li>
+                        </ul>
+
+                        <h6>00:25:19 Яндекс GPT и Яндекс браузер</h6>
+
+                        <ul>
+                            <li>Яндекс GPT - текстовый сервис, который объясняет сложные темы на пальцах.</li>
+                            <li>Яндекс браузер интегрировал все свои нейронные сети, включая Яндекс GPT и
+                                сервис для генерации картинок.</li>
+                        </ul>
+
+                        <h6>00:30:38 Возможности Яндекс.Браузера</h6>
+
+                        <ul>
+                            <li>Работа с текстом: исправление ошибок, сокращение, улучшение стиля.</li>
+                        </ul>
+
+                        <h6>00:34:09 Бинг - аналог чата G5</h6>
+
+                        <ul>
+                            <li>Бинг - бесплатный аналог ChatGPT, который ссылается на внешние ресурсы.</li>
+                            <li>Бинг доступен только с VPN</li>
+                        </ul>
+
+                        <h6>00:37:40 Заключение основной части</h6>
+
+                        <h6>00:38:52 Обсуждение использования нейронных сетей на практике</h6>
+
+                        <ul>
+                            <li>Участники обсуждают возможность использования нейронных сетей в своей работе и
+                                предлагают
+                                идеи для включения их в стандартные задачи.</li>
+                            <li>Упоминается важность практики и опыта использования нейронных сетей, а также
+                                необходимость
+                                поделиться своим опытом и трудностями.</li>
+                        </ul>
+
+                        <h6>00:40:40 Планы на будущее</h6>
+
+                        <ul>
+                            <li>Участники обсуждают планы на будущее, включая проведение вебинаров и предоставление
+                                ответов на вопросы.</li>
+                        </ul>
+
+                        <h6>00:41:39 Завершение встречи</h6>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Закрыть</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal fade" id="how-reg-modal" tabindex="-1" role="dialog" aria-labelledby="modal-title"
+        aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered modal-lg" role="document">
+            <div class="modal-content">
+                <div class="modal-body">
+                    <iframe src="https://www.youtube.com/embed/kQDWn2CBFns?si=yKQ3Z49TeXEOZlA8"
+                        title="YouTube video player" frameborder="0"
+                        allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                        allowfullscreen></iframe>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Закрыть</button>
+                </div>
             </div>
         </div>
     </div>
