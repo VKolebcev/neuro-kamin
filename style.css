@@ -208,7 +208,7 @@ iframe {
     height: calc((var(--bs-modal-width) - 40px) * 0.5625);
 }
 
-.modal-body > div {
+#prev-meet-modal .modal-body > div {
     padding: 20px;
 }
 
