@@ -33,7 +33,7 @@ html {
 .meeting {
     position: relative;
     margin: 20px;
-    width: 600px;
+    max-width: 100%;
     min-height: 300px;
     background-color: #ededed;
     border-radius: 2rem;
